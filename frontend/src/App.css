@@ -1,0 +1,126 @@
+#root {
+	max-width: 100%;
+	height: 100%;
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+
+/* Ensure that the body takes up the full viewport width */
+html,
+body {
+	--rainbow-red: #ed5564;
+	--rainbow-yellow: #ffce54;
+	--rainbow-green: #a0d568;
+	--rainbow-blue: #4fc1e8;
+	--rainbow-purple: #ac92eb;
+
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	min-width: 100%;
+	height: 100%;
+	min-height: 100%;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	width: 100%;
+	padding: 10px 2rem; /* Adjusted padding */
+	box-sizing: border-box; /* Ensures padding is included in the width */
+}
+
+.nav-link {
+	color: black;
+	text-decoration: none;
+	margin-left: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+	white-space: nowrap; /* Prevents the text from wrapping */
+}
+
+.nav-link:first-child {
+	margin-left: 0;
+}
+
+.nav-link:hover {
+	background-color: #555;
+}
+
+.nav-links-right {
+	display: flex;
+	flex-wrap: nowrap; /* Prevents the flex items from wrapping */
+}
+
+/* Ensures the first nav-link (Home) is aligned to the left */
+.navbar > .nav-link {
+	margin-right: auto;
+}
+
+.header {
+	background-color: #0056b3;
+	color: white;
+	text-align: center;
+	padding: 20px;
+}
+
+.feature-section {
+	padding: 20px;
+	text-align: center;
+}
+
+.feature-section .course-grid {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 20px;
+	/* Add more styling for course cards here */
+}
+
+.footer {
+	background-color: #333;
+	color: white;
+	text-align: center;
+	padding: 10px;
+}
+
+.homepage {
+	display: flex;
+	align-items: flex-end; /* Aligns content to the bottom */
+	justify-content: flex-start; /* Aligns content to the left */
+	height: 100vh; /* Full viewport height */
+	background-color: #f0f2f5; /* Light grey background, similar to Facebook's theme */
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* A clean, modern font */
+	padding-left: 5%; /* Padding to the left for some space from the edge */
+	padding-bottom: 10%; /* Padding at the bottom to position the content upwards */
+}
+
+.title-container {
+	text-align: left; /* Aligns the text to the left */
+	padding-left: 200px;
+	padding-top: 200px;
+}
+
+.main-title {
+	font-size: 4rem; /* Large font size for the title */
+	color: #1877f2; /* Facebook's blue color for the title */
+	margin: 0;
+}
+
+.slogan {
+	font-size: 1.5rem; /* Slightly larger font size for the slogan */
+	color: #606770; /* A darker grey for the slogan */
+	margin-top: 10px;
+}
+
+.homepage-image {
+	width: 100%; /* Full width - adjust as needed */
+	height: auto; /* Maintain aspect ratio */
+	position: absolute; /* Absolute positioning */
+	bottom: 0; /* Align to the bottom of the container */
+	left: 0; /* Align to the left of the container */
+	z-index: -1; /* Ensure the image stays behind the text */
+}

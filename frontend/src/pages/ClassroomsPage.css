@@ -1,0 +1,40 @@
+.classroom-card {
+	display: block;
+	width: 300px; /* Adjust width as necessary */
+	margin: 10px;
+	border-radius: 8px;
+	overflow: hidden;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth out the transition */
+	background: #fff; /* Adjust card background color as necessary */
+}
+
+.classroom-card:hover {
+	transform: scale(1.1); /* Increased from 1.05 for more 'pop' */
+	box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.3); /* More dramatic shadow */
+}
+
+.card-title:hover {
+	color: #c4c6fa;
+}
+
+.card-container {
+	padding: 2px 16px;
+}
+
+.card-title {
+	font-size: 18px;
+	font-weight: bold;
+	color: #333; /* Adjust text color as needed */
+}
+
+.card-info {
+	font-size: 14px;
+	margin-top: 5px;
+	color: #333; /* Adjust text color as needed for visibility */
+}
+
+.title {
+	font-size: 30px;
+	margin-top: 30px;
+}

@@ -1,0 +1,42 @@
+/* DragBox.css */
+.container {
+	display: flex;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100%;
+	width: 100%;
+	flex-direction: row;
+}
+
+.box {
+	flex: 1;
+	position: relative;
+	overflow-y: auto;
+}
+
+.section {
+	height: 19%;
+	border-bottom: 1px solid black;
+}
+
+.draggable {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	cursor: move;
+}
+
+.sidebar {
+	width: 200px;
+	background-color: #f0f0f0;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+	justify-content: center;
+}
+
+.sidebar h2 {
+	color: black !important;
+}

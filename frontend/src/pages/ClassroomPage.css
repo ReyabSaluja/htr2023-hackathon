@@ -1,12 +1,11 @@
-/* DragBox.css */
+/* ClassroomPage.css */
+
 .container {
 	display: flex;
-	display: flex;
-	flex-direction: column;
+	flex-direction: row; /* Ensure that the main container lays out its children in a row */
 	justify-content: space-between;
 	height: 100%;
 	width: 100%;
-	flex-direction: row;
 }
 
 .box {
@@ -32,11 +31,49 @@
 	width: 200px;
 	background-color: #f0f0f0;
 	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	justify-content: center;
+	flex-direction: column; /* Change to column to stack items vertically */
+	align-items: center; /* Center items horizontally */
+	padding: 10px; /* Add some padding for spacing */
 }
 
 .sidebar h2 {
-	color: black !important;
+	color: black;
+	margin-bottom: 20px; /* Add space below the header */
+}
+
+.student,
+.sidebar button {
+	width: 90%; /* Make the element almost take up the full width of the sidebar */
+	margin-bottom: 10px; /* Add space between student names */
+	text-align: center; /* Center-align the text */
+	font-size: 1.1em; /* Increase the font size */
+	padding: 5px 0; /* Add padding for a taller, more clickable area */
+	border-radius: 5px; /* Optional: round the corners for a smoother look */
+	border: 1px solid #ccc; /* Optional: add a border */
+	background-color: white; /* Optional: set a background color */
+	cursor: pointer; /* Optional: change cursor to pointer to indicate clickability */
+}
+
+/* Additional style for buttons, if you have any */
+.sidebar button {
+	background-color: #1877f2; /* Example button color */
+	color: white; /* Text color for buttons */
+	border: none; /* Remove border for buttons */
+}
+
+.draggable {
+	position: absolute;
+	width: 120px; /* Reduce the width of the draggable box */
+	height: 60px; /* Significantly reduce the height of the draggable box */
+	background-color: #f9f9f9; /* Light background color for the box */
+	border: 1px solid #ddd; /* Add a border to the box */
+	border-radius: 8px; /* Round the corners of the box */
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add a subtle shadow for depth */
+	display: flex;
+	align-items: center; /* Vertically center the content */
+	justify-content: center; /* Horizontally center the content */
+	padding: 5px; /* Slightly reduce padding inside the box */
+	cursor: move; /* Change the cursor to indicate movability */
+	color: black;
+	font-weight: bold;
 }
